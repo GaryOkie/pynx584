@@ -7,8 +7,9 @@
   "boot": "auto",
   "uart": "true",
   "udev": "true",
+  "devices": "/dev/ttyUSB0",
   "options": {
-    "SERIAL": "/dev/USB0",
+    "SERIAL": "/dev/ttyUSB0",
     "BAUD": "38400",
     "IPADDR": ""
   },
