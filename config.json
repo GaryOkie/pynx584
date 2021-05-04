@@ -5,23 +5,26 @@
   "description": "NX-584 Alarm Panel Interface ",
   "arch": ["amd64"],
   "boot": "auto",
+  "usb": "true",
   "uart": "true",
   "udev": "true",
-  "devices": "/dev/ttyUSB0",
+  "devices": ["/dev/ttyUSB0"],
   "options": {
     "SERIAL": "/dev/ttyUSB0",
     "BAUD": "38400",
-    "IPADDR": ""
+    "IPADDR": "",
+    "DEBUG": "false"
   },
   "schema": {
     "SERIAL": "str",
     "BAUD": "int",
-    "IPADDR": "str"
+    "IPADDR": "str",
+    "DEBUG": "bool"
   },
   "ports": {
     "5007/tcp": 5007
   },
   "ports_description": {
-    "5007/tcp": "nx584 server port"
+    "5007/tcp": "nx584_server port"
   }
 }
